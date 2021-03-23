@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--Bootsrap 4 CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+ 
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+     <button type="button"  class="btn m-2" style="background-color: #A9D8D2;" id="logout"><a href="/signout">Logout</a></button>
+     <button type="button" class="btn m-2" style="background-color: #A9D8D2;" id="view"><a href="/allforms">View all Feedbacks</a></button>
+     <div class="container my-5 pt-1 pb-5" style="background-color: #A9D8D2; border-radius: 3px;">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center my-auto">
+                <h2 class="text-dark" style="font-weight: 600;">Survey form</h2>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center" >
+            <div class="col-10 bg-white" style="border-radius: 3px;">
+                <form id="form">
+                    <div class="form-row m-4">
+                        <label for="inputEmail4" class="col-sm-2 col-form-label">Name*</label>
+                        <input type="text" class="form-control col-sm-10" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-row m-4">
+                        <label for="inputEmail4" class="col-sm-2 col-form-label">Email*</label>
+                        <input type="email" class="form-control col-sm-10" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-row m-4">
+                        <label for="inputEmail4" class="col-sm-2 col-form-label">Age*</label>
+                        <input type="number" class="form-control col-sm-10" id="age" placeholder="Age" min="13">
+                    </div>
+                    <div class="form-row m-4">
+                        <label for="inputEmail4" class="col-sm-4 col-form-label">Which options describes you the best</label>
+                        <select class="form-control col-sm-8" id="s1">
+                            <option value="Student">Student</option>
+                            <option value="Teacher">Teacher</option>
+                        </select>
+                    </div>
+                    <div class="form-row m-4">
+                        <label for="inputEmail4" class="col-sm-4 col-form-label">How likely is that you would recommend freeCodeCamp to a freind</label>
+                        
+                        <div class="form-check ml-3">
+                            <input class="form-check-input r1" type="radio" name="exampleRadios" value="Definetly" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                              Definetly
+                            </label>
+                          </div>
+                          
+                          <div class="form-check ml-3">
+                            <input class="form-check-input r1" type="radio" name="exampleRadios" value="May be">
+                            <label class="form-check-label" for="exampleRadios2">
+                              May be
+                            </label>
+                          </div>
+                          
+                          <div class="form-check ml-3">
+                            <input class="form-check-input r1" type="radio" name="exampleRadios" value="Not sure">
+                            <label class="form-check-label" for="exampleRadios2">
+                              Not sure
+                            </label>
+                          </div>
+                    </div>
+                    <div class="form-row m-4">
+                        <label for="inputEmail4" class="col-sm-4 col-form-label">What do you like most in FCC</label>
+                        <select name="wo" class="form-control col-sm-8" id="s2">
+                            <option value="Student">Student</option>
+                            <option value="Teacher">Teacher</option>
+                          
+                        </select>
+                    </div>
+                    <div class="form-row m-4">
+                        <label for="inputEmail4" class="col-sm-4 col-form-label">Things that should be improved in future</label>
+                        
+                        <div class="form-check ml-3">
+                            <input class="form-check-input cb1" type="checkbox" value="Frontend Projects">
+                            <label class="form-check-label" for="defaultCheck1">
+                              Frontend projects
+                            </label>
+                          </div>
+                          <div class="form-check ml-3">
+                            <input class="form-check-input cb1" type="checkbox" value="Backend projects" >
+                            <label class="form-check-label" for="defaultCheck2">
+                              Backend projects
+                            </label>
+                          </div>
+                          <div class="form-check ml-3">
+                            <input class="form-check-input cb1" type="checkbox" value="Data Visualisation">
+                            <label class="form-check-label" for="defaultCheck2">
+                              Data Visualisation
+                            </label>
+                          </div>
+                    </div>
+                    <button type="submit" class="btn m-3" style="background-color: #A9D8D2;">Submit</button>
+                    <button type="reset" class="btn m-2" style="background-color: #A9D8D2;">Reset</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../public/js/survey.js"></script>
+</body>
+
+</html>
